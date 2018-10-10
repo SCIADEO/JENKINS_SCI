@@ -23,7 +23,7 @@ node {
 
 node {
   stage('2- Print parameter'){
-    sh '''
+    sh 'echo SCI_PARAM'
        echo "Affichage du paramètre saisie par l'utilisateur"
        echo "  valeur du paramètre : $missing_param"
     '''
