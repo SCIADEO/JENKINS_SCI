@@ -31,10 +31,6 @@ node {
     def value = params.$SCI_PARAM
     def value_upper = params.$SCI_PARAM.toUpperCase()
 
-    println "Print default => " + params.$SCI_PARAM
-    println "Print default => " + valuue
-    println "Print upper case value =>  + value_upper"
-
   }
 }
 
