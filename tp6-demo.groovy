@@ -25,14 +25,13 @@ node {
   stage('2- Print parameter'){
     sh 'echo SCI_PARAM'
        echo "Affichage du paramètre saisie par l'utilisateur"
-       echo "  valeur du paramètre : $missing_param"
-    '''
+       echo "  valeur du paramètre : $SCI_PARAM"
 
     // Pour récupérer la valeur dans le script
-    def value = params.missing_param
-    def value_upper = params.missing_param.toUpperCase()
+    def value = params.$SCI_PARAM
+    def value_upper = params.$SCI_PARAM.toUpperCase()
 
-    println "Print default => " + params.missing_param
+    println "Print default => " + params.$SCI_PARAM
     println "Print default => " + valuue
     println "Print upper case value =>  + value_upper"
 
