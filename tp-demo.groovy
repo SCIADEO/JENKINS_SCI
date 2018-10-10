@@ -1,4 +1,4 @@
 node {
- stage {'Hello'} {
+ stage ('Hello') {
  echo "Hello ADEO"}
 }
